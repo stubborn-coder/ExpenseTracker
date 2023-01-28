@@ -5,17 +5,23 @@ import { Header } from './components/Header.jsx';
 import { Balance } from './components/Balance';
 import { AccountSummary } from './components/AccountSummary';
 import { TransactionHistory } from './components/TransactionHistory';
+import { AddTransaction } from './components/AddTransaction';
+
+//import Provider
+import { GlobalProvider } from './context/GlobalState';
 
 function App() {
   return (
-    <div className="App">
+    
+    <GlobalProvider>
       <Header/>
       <div className='container'>
         <Balance/>
         <AccountSummary/>
         <TransactionHistory/>
+        <AddTransaction/>
       </div>
-    </div>
+    </GlobalProvider>
   );
 }
 
