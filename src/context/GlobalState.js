@@ -6,6 +6,7 @@ import AppReducer from './AppReducer';
 const initialSate = {
     transactions:[
         { id:1, description: "Project income 1", transactionAmount: 10000},
+        { id:2, description: "Project income 2", transactionAmount: 20000},
     ]
 }
 
