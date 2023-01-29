@@ -28,7 +28,7 @@ export const AccountSummary = () => {
             </p>
         </div>
         <div>
-            <h4>Income</h4>
+            <h4>Expense</h4>
             <p className='money minus'>
                 -${expense}
             </p>
